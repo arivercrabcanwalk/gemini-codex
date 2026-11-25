@@ -1,0 +1,129 @@
+{
+  "scope": "Independent replay of packaged synthetic fixtures on local machine, not hn01 or a scientific run",
+  "hn01_g1_status": "UNVERIFIED_PENDING_HN01_RECEIPT",
+  "research_admission": "NOT_ASSESSED",
+  "training_authorized": false,
+  "same_source_sha256": {
+    "README.md": "1e2d3ec8505b71b0bd74f38c700a7412b6a9a400f42526f3e063c6e153eff74f",
+    "SPEC_V5_1_ACCEPTANCE.md": "17d43e3af23b56b01c47220e828aa51b6be7fb7530d27953537553b94b0bf325",
+    "frozen_source_lock.json": "3b83e608d18532739683e8d27fc97689bfad982ed88c4dc0eaf17efbe6e002ba",
+    "push_to_github.sh": "a334d85aa7ff29010b89f6785b9adba03214dc5b56dfa71297edf29204bcecd2",
+    "run_acceptance_pack.py": "e202ff0b2d11c7d86245a7afe1e1b5075b72a4eb5f2ab912ff86d1899a2b0200",
+    "stats/__init__.py": "29168c0f5e5bad5f7f6c5a2ce0e5529b7b0c0d06d62902e7b57004c6ef27ed54",
+    "stats/paired_inference.py": "a988f7a9cbc32fa0392c9fb448e02e0b186cf73a960fad8401718ae1a655d158",
+    "tests/test_acceptance_pack.py": "2c7a8b83b08e3175aa97df3000b2b013ad07ac34ace25bdd60fc04f2e0082f68",
+    "tests/test_review_a.py": "f7f115c2e8e142a4b1230f31de5c4abd4fd17911ce88c656fda3f36e753065d2",
+    "tests/test_review_b.py": "004109fcc3f42ecd1534b01067aed699ed840835b189070058eb7044062b71a2",
+    "tests/test_review_runner.py": "6d167d7ec26fef03e27529c1c8737cb944c9b7923bcc664208b879148af4fcff",
+    "tests/test_review_stats.py": "e2d1b69d5d573524b99f228dafbc5fc6c9b72333daa2dbb351b3a8c282beaf41",
+    "track_a/__init__.py": "a050d6d5d0e35030a3a3e8e7264b3a78c2a3663ca8f86e323061de526a7f3add",
+    "track_a/decoder_and_mask.py": "23f507574ee5bfe38ddf2155107b15f8d3188b10596e7d1e3ad97ba431a94780",
+    "track_a/expected/track_a_v5_1_expected.json": "65d365b9d94b7b00c3276ef6b1db2015ebb629a852d2241520bbd456651d006b",
+    "track_a/frozen_adapter.py": "46bf60a5bcfb97ed286b861d884a96e1688d101ae71d11b32c81045af9cb5e2a",
+    "track_a/inputs/track_a_v5_1_instances.json": "d73578ab664d7b6f9541ffe3ca7df20bf09323e0e591161e7283f66b3575f256",
+    "track_a/lex_bopo_loss.py": "b96abf999a7d0d93295881c4e29a634abb60ab1e48ba2df652a97b66c80c2806",
+    "track_a/run_track_a_acceptance.py": "077564464fbeddf3766cd37c7b6b15516dde2142e84ffef2a68f9781519c1579",
+    "track_b/IMPLEMENTATION_STATUS.md": "a93fa57141c2e04e42d08b1f39fb361de863b280a5b52b673b539d1b7cdbe658",
+    "track_b/__init__.py": "be575d2d87f9f217c29fb7663a69d3a68bf435e8f17d1b97cdb0e08a6290978f",
+    "track_b/build_blind_inputs.py": "eca47259735e045c3f0ca734126a2537046bfc9bc79f1d01b4a376048acee35c",
+    "track_b/cape_executor.py": "1b080f2dcf10ae5c66f24d894b335fd7ef18dc6633ee6673f050097b17829ca0",
+    "track_b/expected/track_b_v5_1_expected.json": "2cba4f783814d56250f1229918e0583f10b061578a5becb2d76a4e0970ff510c",
+    "track_b/independent_comparator.py": "701e9470febb741b6f48a4cffa94b8731f06f7c3da01a92d1f45c45ca7383dd2",
+    "track_b/inputs/track_b_v5_1_inputs.json": "03974b4ad826716b339557cf7946ca649d7ad8ac0d5aa944b294d6b317ab2825",
+    "track_b/run_track_b_acceptance.py": "0c4303b610a762594e6f348702424e799961ec69011c22fbde949b831645a998"
+  },
+  "runs": [
+    {
+      "mode": "standalone",
+      "adapter_mode": "STANDALONE_SYNTHETIC_ENGINEERING_SHIM",
+      "status": "ENGINEERING_PASS",
+      "python": "3.14.5",
+      "os": "Darwin",
+      "frozen_validation_calls": 0,
+      "unittest_run": 75,
+      "unittest_skipped": 4,
+      "fixture_results": {
+        "fixture_costs_rmb": [
+          91.4,
+          90.15,
+          90.65
+        ],
+        "fixture_count": 7,
+        "matched_checkpoints": 37
+      },
+      "loaded_external_sources_sha256": {},
+      "deterministic_output_sha256": {
+        "track_a_actual_output.json": "db2926fb0b9d7975f6dab9f9a12ff12f79afdac9bf6b1b987e313d34d8ebf190",
+        "track_b_comparison_report.json": "29a46f299bd0bd39309c86889e94610f73c8c5ca45d3c822915e551dd99c7b98",
+        "track_b_actual_logs.json": "ada616d30004f4d5df4b7b7e800c635e05418a9a117fee0dabcdb13f7f460f93",
+        "stats_power_audit.json": "4578dded050b919194ddddcac9b642baaabb66293c9f8721a672a17015978c8e"
+      },
+      "steps": [
+        {
+          "name": "track_a",
+          "exit_code": 0
+        },
+        {
+          "name": "track_b_blind",
+          "exit_code": 0
+        },
+        {
+          "name": "track_b_compare",
+          "exit_code": 0
+        },
+        {
+          "name": "unit_tests",
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "mode": "frozen_local_copy",
+      "adapter_mode": "DIRECT_FROZEN_IMPORT",
+      "status": "ENGINEERING_PASS",
+      "python": "3.14.5",
+      "os": "Darwin",
+      "frozen_validation_calls": 7,
+      "unittest_run": 75,
+      "unittest_skipped": 0,
+      "fixture_results": {
+        "fixture_costs_rmb": [
+          91.4,
+          90.15,
+          90.65
+        ],
+        "fixture_count": 7,
+        "matched_checkpoints": 37
+      },
+      "loaded_external_sources_sha256": {
+        "env/constant_audit.py": "bfc4cacf8166ee450386319ea7156bbb5e83fcd1f5e72444212723323fa25479",
+        "baselines/problem.py": "f03c2f4201cdea977644d84ab0ad704eb47d4c4389b06b2ac86b9d264463b1cc",
+        "baselines/wind_scorer.py": "0698b6e0d7aae5f138840dba7f33f2093e4664f2d99c6e6cd1f41a1305ebd153"
+      },
+      "deterministic_output_sha256": {
+        "track_a_actual_output.json": "7fa107b7d44f105875b507441ca763807f6fedc7264fd7b17023fa536ea68fa8",
+        "track_b_comparison_report.json": "29a46f299bd0bd39309c86889e94610f73c8c5ca45d3c822915e551dd99c7b98",
+        "track_b_actual_logs.json": "ada616d30004f4d5df4b7b7e800c635e05418a9a117fee0dabcdb13f7f460f93",
+        "stats_power_audit.json": "4578dded050b919194ddddcac9b642baaabb66293c9f8721a672a17015978c8e"
+      },
+      "steps": [
+        {
+          "name": "track_a",
+          "exit_code": 0
+        },
+        {
+          "name": "track_b_blind",
+          "exit_code": 0
+        },
+        {
+          "name": "track_b_compare",
+          "exit_code": 0
+        },
+        {
+          "name": "unit_tests",
+          "exit_code": 0
+        }
+      ]
+    }
+  ]
+}

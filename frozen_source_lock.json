@@ -1,0 +1,7 @@
+{
+  "production/frozen/env/__init__.py": "81d98e300844680c63d0b48ebdd22aae97c1deb4454876426e91fac7c15b624f",
+  "production/frozen/env/constant_audit.py": "bfc4cacf8166ee450386319ea7156bbb5e83fcd1f5e72444212723323fa25479",
+  "production/frozen/baselines/__init__.py": "c903859180ad0413897a8d6c9d987b2f8885a1f777ce2bfc4ce9f413c0fc692e",
+  "production/frozen/baselines/problem.py": "f03c2f4201cdea977644d84ab0ad704eb47d4c4389b06b2ac86b9d264463b1cc",
+  "production/frozen/baselines/wind_scorer.py": "0698b6e0d7aae5f138840dba7f33f2093e4664f2d99c6e6cd1f41a1305ebd153"
+}

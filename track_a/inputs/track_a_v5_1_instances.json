@@ -1,0 +1,514 @@
+{
+  "schema_version": "v5.1-TrackA-BlindInputs",
+  "slot_convention_note": "slot 0 = LD (1.00), slot 1 = SD (0.81); SABS must serialize as [[], SD_trips]",
+  "dabs_6tower_instance": {
+    "provenance": "SYNTHETIC_BENCHMARK_INSTANCE",
+    "wind_xy_mps": [
+      9.0,
+      0.0
+    ],
+    "stations": {
+      "S1": {
+        "station_type": "DABS",
+        "xy_m": [
+          0.0,
+          0.0
+        ],
+        "assigned_towers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    "towers": {
+      "1": {
+        "xy_m": [
+          -1440.0,
+          0.0
+        ],
+        "t_srv_min": 12.0,
+        "energy": 0.24
+      },
+      "2": {
+        "xy_m": [
+          -720.0,
+          2160.0
+        ],
+        "t_srv_min": 12.0,
+        "energy": 0.24
+      },
+      "3": {
+        "xy_m": [
+          0.0,
+          2160.0
+        ],
+        "t_srv_min": 12.0,
+        "energy": 0.24
+      },
+      "4": {
+        "xy_m": [
+          -720.0,
+          -2160.0
+        ],
+        "t_srv_min": 12.0,
+        "energy": 0.24
+      },
+      "5": {
+        "xy_m": [
+          0.0,
+          -2160.0
+        ],
+        "t_srv_min": 12.0,
+        "energy": 0.24
+      },
+      "6": {
+        "xy_m": [
+          720.0,
+          -2160.0
+        ],
+        "t_srv_min": 12.0,
+        "energy": 0.24
+      }
+    },
+    "global_makespan_cap_min": 50.0,
+    "synthetic_reference_solution": {
+      "provenance_label": "SYNTHETIC_REFERENCE_ROUTE",
+      "routes": {
+        "S1": [
+          [
+            [
+              1,
+              4,
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            [
+              6
+            ]
+          ]
+        ]
+      }
+    },
+    "candidate_solutions": {
+      "COSORTIE_FASTER_ROUTE": {
+        "provenance_label": "SYNTHETIC_CANDIDATE_ROUTE",
+        "wall_elapsed_s": 1.2,
+        "wall_limit_s": 6.0,
+        "routes": {
+          "S1": [
+            [
+              [
+                4,
+                5,
+                6
+              ]
+            ],
+            [
+              [
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          ]
+        }
+      },
+      "COSORTIE_SAME_SLOT_PERM_EQUIV": {
+        "provenance_label": "SYNTHETIC_CANDIDATE_ROUTE_PERM_EQUIV",
+        "wall_elapsed_s": 1.25,
+        "wall_limit_s": 6.0,
+        "routes": {
+          "S1": [
+            [
+              [
+                4,
+                5,
+                6
+              ]
+            ],
+            [
+              [
+                2,
+                3
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      "TIE_MAKESPAN_COSTLIER_ROUTE": {
+        "provenance_label": "SYNTHETIC_CANDIDATE_ROUTE_TIE_MAKESPAN",
+        "wall_elapsed_s": 1.3,
+        "wall_limit_s": 6.0,
+        "routes": {
+          "S1": [
+            [
+              [
+                4,
+                6,
+                5
+              ]
+            ],
+            [
+              [
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          ]
+        }
+      },
+      "A_NEG_WRONG_SLOT_INVERSION": {
+        "provenance_label": "NEGATIVE_CONTROL_INVERTED_SLOTS",
+        "wall_elapsed_s": 1.1,
+        "wall_limit_s": 6.0,
+        "routes": {
+          "S1": [
+            [
+              [
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                4,
+                5,
+                6
+              ]
+            ]
+          ]
+        }
+      },
+      "A_NEG_VALIDATOR_WALLCLOCK_TIMEOUT": {
+        "provenance_label": "NEGATIVE_CONTROL_POST_DEADLINE_FINISH",
+        "wall_elapsed_s": 6.001,
+        "wall_limit_s": 6.0,
+        "routes": {
+          "S1": [
+            [
+              [
+                4,
+                5,
+                6
+              ]
+            ],
+            [
+              [
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    "trajectory_witnesses": {
+      "TRAJ_COSORTIE_FASTER_CLOSED": {
+        "truncated": false,
+        "actions": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "TRAJ_MIN_WORKLOAD_COUNTEREXAMPLE_CLOSED": {
+        "truncated": false,
+        "actions": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "TRAJ_TRUNCATED_UNCLOSED": {
+        "truncated": true,
+        "actions": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "TRAJ_PURE_PHYSICAL_MAKESPAN_DEAD_END_4STEP": {
+        "truncated": false,
+        "actions": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    }
+  },
+  "two_station_dabs_sabs_instance": {
+    "provenance": "SYNTHETIC_CROSS_STATION_BENCHMARK",
+    "wind_xy_mps": [
+      9.0,
+      0.0
+    ],
+    "stations": {
+      "S1": {
+        "station_type": "DABS",
+        "xy_m": [
+          0.0,
+          0.0
+        ],
+        "assigned_towers": [
+          1,
+          2
+        ]
+      },
+      "S2": {
+        "station_type": "SABS",
+        "xy_m": [
+          15000.0,
+          0.0
+        ],
+        "assigned_towers": [
+          3,
+          4
+        ]
+      }
+    },
+    "towers": {
+      "1": {
+        "xy_m": [
+          -1440.0,
+          0.0
+        ],
+        "t_srv_min": 18.0,
+        "energy": 0.36
+      },
+      "2": {
+        "xy_m": [
+          -720.0,
+          0.0
+        ],
+        "t_srv_min": 18.0,
+        "energy": 0.36
+      },
+      "3": {
+        "xy_m": [
+          16440.0,
+          0.0
+        ],
+        "t_srv_min": 5.0,
+        "energy": 0.10
+      },
+      "4": {
+        "xy_m": [
+          17880.0,
+          0.0
+        ],
+        "t_srv_min": 5.0,
+        "energy": 0.10
+      }
+    },
+    "synthetic_reference_routes": {
+      "S1": [
+        [
+          [
+            2,
+            1
+          ]
+        ],
+        []
+      ],
+      "S2": [
+        [],
+        [
+          [
+            3
+          ],
+          [
+            4
+          ]
+        ]
+      ]
+    },
+    "compensated_candidate_routes": {
+      "S1": [
+        [
+          [
+            2
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "S2": [
+        [],
+        [
+          [
+            3,
+            4
+          ]
+        ]
+      ]
+    },
+    "sabs_slot0_nonempty_negative_routes": {
+      "S1": [
+        [
+          [
+            2
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "S2": [
+        [
+          [
+            3,
+            4
+          ]
+        ],
+        []
+      ]
+    }
+  },
+  "tolerance_probes": {
+    "cost_cap_subtraction_probe": {
+      "budget_rmb": 300.0,
+      "candidate_cost_rmb": 300.0000001
+    },
+    "energy_1e12_vs_1e7_probe": {
+      "sd_cap": 0.81,
+      "sortie_energy": 0.8100000005
+    }
+  }
+}

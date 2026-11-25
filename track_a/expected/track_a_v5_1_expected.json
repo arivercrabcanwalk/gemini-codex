@@ -1,0 +1,137 @@
+{
+  "dabs_6tower_reference": {
+    "provenance_label": "SYNTHETIC_REFERENCE_ROUTE",
+    "raw_cost_rmb": 91.4,
+    "makespan_min": 50.0,
+    "flight_min": 24.0,
+    "service_min": 72.0
+  },
+  "dabs_6tower_candidates": {
+    "COSORTIE_FASTER_ROUTE": {
+      "admissible": true,
+      "reason": "ADMISSIBLE",
+      "raw_cost_rmb": 90.15,
+      "makespan_min": 48.5,
+      "cost_diff_rmb": -1.25
+    },
+    "COSORTIE_SAME_SLOT_PERM_EQUIV": {
+      "admissible": true,
+      "reason": "ADMISSIBLE",
+      "raw_cost_rmb": 90.15,
+      "makespan_min": 48.5,
+      "cost_diff_rmb": -1.25
+    },
+    "TIE_MAKESPAN_COSTLIER_ROUTE": {
+      "admissible": true,
+      "reason": "ADMISSIBLE",
+      "raw_cost_rmb": 90.65,
+      "makespan_min": 48.5,
+      "cost_diff_rmb": -0.75
+    },
+    "A_NEG_WRONG_SLOT_INVERSION": {
+      "admissible": false,
+      "reason": "BATTERY_EXCEEDED:S1:slot1(SD):0.882000000000>0.81",
+      "raw_cost_rmb": null,
+      "makespan_min": null,
+      "cost_diff_rmb": null
+    },
+    "A_NEG_VALIDATOR_WALLCLOCK_TIMEOUT": {
+      "admissible": false,
+      "reason": "WALL_CLOCK_EXCEEDED_AT_VALIDATOR_FINISH",
+      "raw_cost_rmb": null,
+      "makespan_min": null,
+      "cost_diff_rmb": null
+    }
+  },
+  "tie_break_winner_between_faster_and_costlier": "COSORTIE_FASTER_ROUTE",
+  "slot_adapter_and_equivalence": {
+    "bidirectional_roundtrip_exact": true,
+    "ordered_equal_between_perm_variants": false,
+    "intra_slot_multiset_equal_between_perm_variants": true
+  },
+  "trajectory_witness_verdicts": {
+    "TRAJ_COSORTIE_FASTER_CLOSED": {
+      "k1": 0,
+      "k2": 0,
+      "v3_makespan_lb_min": 48.5,
+      "v4_flight_lb_min": 21.5,
+      "n_active_steps": 8,
+      "terminal_valid_count": 0,
+      "terminal_rejections": {},
+      "can_submit_to_validator": true
+    },
+    "TRAJ_MIN_WORKLOAD_COUNTEREXAMPLE_CLOSED": {
+      "k1": 0,
+      "k2": 0,
+      "v3_makespan_lb_min": 48.5,
+      "v4_flight_lb_min": 21.5,
+      "n_active_steps": 8,
+      "terminal_valid_count": 0,
+      "terminal_rejections": {},
+      "can_submit_to_validator": true
+    },
+    "TRAJ_TRUNCATED_UNCLOSED": {
+      "k1": 1,
+      "k2": 1,
+      "v3_makespan_lb_min": 48.5,
+      "v4_flight_lb_min": 21.5,
+      "n_active_steps": 8,
+      "terminal_valid_count": 1,
+      "terminal_rejections": {},
+      "can_submit_to_validator": false
+    },
+    "TRAJ_PURE_PHYSICAL_MAKESPAN_DEAD_END_4STEP": {
+      "k1": 2,
+      "k2": 6,
+      "v3_makespan_lb_min": 49.75,
+      "v4_flight_lb_min": 27.5,
+      "n_active_steps": 4,
+      "terminal_valid_count": 0,
+      "terminal_rejections": {
+        "(0,0)": "MAKESPAN_LB",
+        "(0,1)": "MAKESPAN_LB",
+        "(0,4)": "MAKESPAN_LB",
+        "(1,0)": "MAKESPAN_LB",
+        "(1,1)": "BATT_CAP",
+        "(1,4)": "BATT_CAP"
+      },
+      "can_submit_to_validator": false
+    }
+  },
+  "state_space_no_hard_flight_prune": {
+    "reachable_canonical_states": 7930,
+    "complete_terminal_states": 30,
+    "dead_end_states": 912
+  },
+  "two_station_cross_offset_and_sabs": {
+    "reference_raw_cost_rmb": 104.2,
+    "reference_makespan_min": 41.0,
+    "compensated_admissible": true,
+    "compensated_raw_cost_rmb": 102.95,
+    "compensated_makespan_min": 23.0,
+    "compensated_cost_diff_rmb": -1.25,
+    "sabs_slot0_nonempty_admissible": false,
+    "sabs_slot0_nonempty_reason": "SABS_SLOT0_NONEMPTY:S2"
+  },
+  "tolerance_and_unit_audit": {
+    "wind_9mps_in_m_per_min": 540.0,
+    "cost_300_naive_add_check": true,
+    "cost_300_frozen_sub_check": false,
+    "energy_5e10_over_wrong_1e7_check": true,
+    "energy_5e10_over_frozen_1e12_check": false
+  },
+  "decoupled_training_vs_delivery": {
+    "training_order": [
+      "B",
+      "C_comp",
+      "A"
+    ],
+    "pool_pareto_ids": [
+      "B",
+      "C_comp",
+      "A"
+    ],
+    "delivered_id": "A"
+  },
+  "lex_bopo_sample_batch_mean": 0.798963591308
+}
